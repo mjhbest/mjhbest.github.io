@@ -1,0 +1,29 @@
+---
+layout: home
+title: About Me
+permalink: /aboutme/
+---
+<header class="c-header u-hide u-no-margin-bottom">
+  <div class="c-header__box">
+    <div class="c-search u-full-width">
+      <div class="c-search__box">
+        <label for="js-search-input" class="u-screen-reader-text">Search for Blog</label>
+        <input type="text" id="js-search-input" class="c-search__text" autocomplete="off"
+          placeholder="Type to search...">
+        <div data-icon='ei-search' data-size='s'></div>
+      </div>
+      <ul id="js-results-container" class="c-search-results-list"></ul>
+    </div>
+  </div>
+</header>
+<div class="c-form-box o-opacity">
+  <form class="c-form"
+    action="{% if site.author-email %}https://formspree.io/{{site.author-email}}{% else %}#{% endif %}" method="POST">
+    <a href="/">
+      <div class="c-form-bnt__close" data-icon='ei-close' data-size='s'></div>
+    </a>
+    <div class="c-form__title">About Me</div>
+    <iframe src="/images/CV.pdf#toolbar=0" width="100%" height="950px">
+    </iframe>
+  </form>
+</div> <!-- /.c-form-box -->
