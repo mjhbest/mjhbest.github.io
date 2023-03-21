@@ -1,53 +1,75 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you: 
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
 title: Jaehyeon Myung
-description: Hello :) I'm Jaehyeon Myung. Welcome to my website.
+email: mjhbest@kaist.ac.kr
+description: >- # this means to ignore newlines until "baseurl:"
+  About myself.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "mjhbest.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-
-# Author
-author-name:    Jaehyeon Myung
-author-image:   hanbok_profile.png
-author-job:     CS Researcher > M.S Candidate @KAIST
-author-email:   jaehyeon.myung@gmail.com # Add your email for contant form.
-author-twitter: mjhbest # Add your twitter account
-about-author:   I am a master Student at KAIST. My research interest is data science, ML and distributed system.
-
-# Social settings
-social-twitter:   mjhbest
-social-facebook:
-social-github:    mjhbest
-social-pinterest:
-social-instagram: dding_jveh__
-social-youtube:
-social-vk:   
-social-linkedin: jhmyung
-
-# Newsletter
-mailchimp: # Add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
-
-# Google Analytics
-google-analytics: # Add your identifier. For example UA-99631805-1
-
-# Comment Section (Disqus)
-disqus-identifier: mr-brown # Add your shortname for Disqus Comment. For example mr-brown
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: mjhbest
+github_username:  mjhbest
 
 # Build settings
-markdown: kramdown
-permalink: /:year/:month/:day/:title/
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 plugins:
-  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-spaceship
+minimal_mistakes_skin: "dirt"
 
-paginate: 7
-paginate_path: "/page/:num/"
-
-include:
-  - _pages
-
-sass:
-  sass_dir: _sass
-  style: compressed
+# markdown: kramdown
+# kramdown:
+#     math_engine: katex
 
 # Exclude from processing.
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - vendor
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/mjhbest"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/mjhbest"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/jhmyung"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://www.instagram.com/dding_jveh__/"

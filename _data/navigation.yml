@@ -1,0 +1,11 @@
+main:
+  - title: "CV"
+    url: "assets/cv/CV.pdf"
+  - title: "Research"
+    url: /research
+  # - title: "Teaching"
+  #   url: /teaching/index
+  - title: "Blog"
+    url: /blog/
+  - title: "News"
+    url: /news
